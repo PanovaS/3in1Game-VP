@@ -1,0 +1,10 @@
+C:\Users\Dell\Desktop\3in1Game\3in1Game\bin\Debug\3in1Game.exe.config
+C:\Users\Dell\Desktop\3in1Game\3in1Game\bin\Debug\3in1Game.exe
+C:\Users\Dell\Desktop\3in1Game\3in1Game\bin\Debug\3in1Game.pdb
+C:\Users\Dell\Desktop\3in1Game\3in1Game\obj\Debug\3in1Game.csprojResolveAssemblyReference.cache
+C:\Users\Dell\Desktop\3in1Game\3in1Game\obj\Debug\_3in1Game.Form1.resources
+C:\Users\Dell\Desktop\3in1Game\3in1Game\obj\Debug\_3in1Game.Properties.Resources.resources
+C:\Users\Dell\Desktop\3in1Game\3in1Game\obj\Debug\3in1Game.csproj.GenerateResource.Cache
+C:\Users\Dell\Desktop\3in1Game\3in1Game\obj\Debug\3in1Game.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Desktop\3in1Game\3in1Game\obj\Debug\3in1Game.exe
+C:\Users\Dell\Desktop\3in1Game\3in1Game\obj\Debug\3in1Game.pdb
