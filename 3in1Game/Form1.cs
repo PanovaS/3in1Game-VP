@@ -13,28 +13,15 @@ namespace _3in1Game
     public partial class Form1 : Form
     {
 
-
-        bool allowClick = false;
         PictureBox firstGuess;
-        Random rnd = new Random();
-        Timer clickTimer = new Timer();
-      
-        int time = 60;
-        Timer timer = new Timer
-        {
-            Interval = 1000
-        };
-
-
-
+        Random r = new Random();
+        int time = 60;     
+        
         public Form1()
         {
             InitializeComponent();
             setRandomImages();
             HideImages();
-            clickTimer.Interval = 1000;
-            clickTimer.Tick += CLICKTIMER_TICK;
-
         }
 
         private PictureBox[] pictureBoxes {
@@ -46,35 +33,14 @@ namespace _3in1Game
         {
             get
             {
-
                 return new Image[] {
-
-    Properties.Resources._0, Properties.Resources._1, Properties.Resources._2,
-   Properties.Resources._3, Properties.Resources._4, Properties.Resources._5,
-                    Properties.Resources._6, Properties.Resources._7
-};
+             Properties.Resources._0, Properties.Resources._1, Properties.Resources._2,
+             Properties.Resources._3, Properties.Resources._4, Properties.Resources._5,
+             Properties.Resources._6, Properties.Resources._7 };
             }
         }
 
-        public void startGameTimer()
-        {
-            timer.Start();
-            timer.Tick += delegate
-            {
-                time--;
-                if (time < 0)
-                {
-                    timer.Stop();
-                    MessageBox.Show("Out of time");
-                    ResetImage();
-                }
-                var ssTime = TimeSpan.FromSeconds(time);
-               label1.Text = "00: " + time.ToString();
-            };
-        }
-
-
-        public void ResetImage()
+      public void ResetImage()
         {
             foreach (var pic in pictureBoxes)
             {
@@ -84,7 +50,7 @@ namespace _3in1Game
             HideImages();
             setRandomImages();
             time = 60;
-            timer.Start();
+            timer1.Start();
         }
         public void HideImages()
         {
@@ -100,7 +66,7 @@ namespace _3in1Game
             int num;
             do
             {
-                num = rnd.Next(0, pictureBoxes.Count());
+                num = r.Next(0, pictureBoxes.Count());
 
             }
             while (pictureBoxes[num].Tag != null);
@@ -117,8 +83,8 @@ namespace _3in1Game
 
         private void clickImage(object sender, EventArgs e)
         {
-            if (!allowClick) return;
             var pic = (PictureBox)sender;
+            
             if (firstGuess == null)
             {
                 firstGuess = pic;
@@ -129,69 +95,47 @@ namespace _3in1Game
             if (pic.Image == firstGuess.Image && pic != firstGuess)
             {
                 pic.Visible = firstGuess.Visible = false;
+              
                 {
                     firstGuess = pic;
                 }
-                HideImages();
-
-
-
+               HideImages();
             }
             else
             {
-
-                allowClick = false;
-                clickTimer.Start();
-
+                timer2.Start();
             }
             firstGuess = null;
             if (pictureBoxes.Any(p => p.Visible)) return;
             MessageBox.Show("You win,try again");
-            ResetImage();
-
-
-
+            ResetImage();          
 
         }
-
-
-
-
-
-
-
-        private void CLICKTIMER_TICK(object sender, EventArgs e)
+               
+      
+        private void timer2_Tick(object sender, EventArgs e)
         {
             HideImages();
-            allowClick = true;
-            clickTimer.Stop();
-
+            timer2.Stop();
         }
 
-        private void Start_Click(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            allowClick = true;
-            startGameTimer();
+            time--;
+            if (time < 0)
+            {
+                timer1.Stop();
+                MessageBox.Show("Out of time");
+                ResetImage();
+            }
+            if (time.ToString().Length == 1)
+            {
+                label1.Text = "00:0" + time.ToString();
+            }
+            else
+            {
+                label1.Text = "00: " + time.ToString();
+            }
         }
-
-
-
-
-
-
-
-
-        /*  private void startGame(object sender, EventArgs e)
-           {
-               allowClick = true;
-               setRandomImages();
-               HideImages();
-               startGameTimer();
-               clickTimer.Interval = 1000;            
-               clickTimer.Tick += CLICKTIMER_TICK;
-              button1.Enabled = false;
-           }
-           */
-
     }
 }
