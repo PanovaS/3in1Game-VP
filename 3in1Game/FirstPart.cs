@@ -10,14 +10,15 @@ using System.Windows.Forms;
 
 namespace _3in1Game
 {
-    public partial class Form1 : Form
+    public partial class FirstPart : Form
     {
-
+        bool allowClick = false;
         PictureBox firstGuess;
         Random r = new Random();
-        int time = 60;     
+        int time = 60;
+        public static int points=0;
         
-        public Form1()
+        public FirstPart()
         {
             InitializeComponent();
             setRandomImages();
@@ -56,7 +57,7 @@ namespace _3in1Game
         {
             foreach (var pic in pictureBoxes)
             {
-                pic.Image = Properties.Resources.question;
+                pic.Image = Properties.Resources.Question1;
             }
         }
 
@@ -67,7 +68,6 @@ namespace _3in1Game
             do
             {
                 num = r.Next(0, pictureBoxes.Count());
-
             }
             while (pictureBoxes[num].Tag != null);
             return pictureBoxes[num];
@@ -84,7 +84,7 @@ namespace _3in1Game
         private void clickImage(object sender, EventArgs e)
         {
             var pic = (PictureBox)sender;
-            
+            if (!allowClick) return;
             if (firstGuess == null)
             {
                 firstGuess = pic;
@@ -107,7 +107,15 @@ namespace _3in1Game
             }
             firstGuess = null;
             if (pictureBoxes.Any(p => p.Visible)) return;
-            MessageBox.Show("You win,try again");
+
+
+            DialogResult res = MessageBox.Show("You win,go to the next level");
+            if (res == DialogResult.OK)
+            {
+                timer1.Stop();
+                this.Dispose();
+            }      
+            if(pictureBoxes.Count()!=0)
             ResetImage();          
 
         }
@@ -136,6 +144,18 @@ namespace _3in1Game
             {
                 label1.Text = "00: " + time.ToString();
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var res = new ThirdPart();
+            res.Show();
+        }
+
+        private void startGameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            allowClick = true;
+            timer1.Start();
         }
     }
 }
