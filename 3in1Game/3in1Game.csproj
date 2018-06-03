@@ -45,16 +45,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FirstPart.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FirstPart.Designer.cs">
+      <DependentUpon>FirstPart.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="ThirdPart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThirdPart.Designer.cs">
+      <DependentUpon>ThirdPart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Words.cs" />
+    <EmbeddedResource Include="FirstPart.resx">
+      <DependentUpon>FirstPart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +73,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ThirdPart.resx">
+      <DependentUpon>ThirdPart.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -105,6 +115,69 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\33962695_2064983736864475_5653094645723299840_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\33982938_2064994710196711_794676920942854144_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Deadpool.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gossip girl.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_002.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_003.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_004.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_005.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_006.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_007.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_008.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_009.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lalaLand.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\La-La-Land-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maleficent.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MovieQuestion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\null.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Question.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Titanic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wonder.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

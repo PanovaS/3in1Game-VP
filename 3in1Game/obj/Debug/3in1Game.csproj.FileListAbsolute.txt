@@ -18,3 +18,14 @@ C:\Users\Aleksandar\Desktop\meiLab\3in1Game\3in1Game\obj\Debug\3in1Game.csproj.G
 C:\Users\Aleksandar\Desktop\meiLab\3in1Game\3in1Game\obj\Debug\3in1Game.csproj.CoreCompileInputs.cache
 C:\Users\Aleksandar\Desktop\meiLab\3in1Game\3in1Game\obj\Debug\3in1Game.exe
 C:\Users\Aleksandar\Desktop\meiLab\3in1Game\3in1Game\obj\Debug\3in1Game.pdb
+C:\Users\Aleksandar\Desktop\downloaded\3in1Game\3in1Game\bin\Debug\3in1Game.exe.config
+C:\Users\Aleksandar\Desktop\downloaded\3in1Game\3in1Game\bin\Debug\3in1Game.exe
+C:\Users\Aleksandar\Desktop\downloaded\3in1Game\3in1Game\bin\Debug\3in1Game.pdb
+C:\Users\Aleksandar\Desktop\downloaded\3in1Game\3in1Game\obj\Debug\3in1Game.csprojResolveAssemblyReference.cache
+C:\Users\Aleksandar\Desktop\downloaded\3in1Game\3in1Game\obj\Debug\_3in1Game.Properties.Resources.resources
+C:\Users\Aleksandar\Desktop\downloaded\3in1Game\3in1Game\obj\Debug\3in1Game.csproj.GenerateResource.Cache
+C:\Users\Aleksandar\Desktop\downloaded\3in1Game\3in1Game\obj\Debug\3in1Game.csproj.CoreCompileInputs.cache
+C:\Users\Aleksandar\Desktop\downloaded\3in1Game\3in1Game\obj\Debug\3in1Game.exe
+C:\Users\Aleksandar\Desktop\downloaded\3in1Game\3in1Game\obj\Debug\3in1Game.pdb
+C:\Users\Aleksandar\Desktop\downloaded\3in1Game\3in1Game\obj\Debug\_3in1Game.FirstPart.resources
+C:\Users\Aleksandar\Desktop\downloaded\3in1Game\3in1Game\obj\Debug\_3in1Game.ThirdPart.resources
