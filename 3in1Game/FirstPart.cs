@@ -16,13 +16,15 @@ namespace _3in1Game
         PictureBox firstGuess;
         Random r = new Random();
         int time = 60;
-        public static int points=0;
+        SecondPart secondForm;
+        public static int points;
         
         public FirstPart()
         {
             InitializeComponent();
             setRandomImages();
             HideImages();
+            points = 30;
         }
 
         private PictureBox[] pictureBoxes {
@@ -51,7 +53,7 @@ namespace _3in1Game
             HideImages();
             setRandomImages();
             time = 60;
-            timer1.Start();
+            //timer1.Start();
         }
         public void HideImages()
         {
@@ -103,27 +105,29 @@ namespace _3in1Game
             }
             else
             {
+                allowClick = false;
                 timer2.Start();
             }
             firstGuess = null;
             if (pictureBoxes.Any(p => p.Visible)) return;
-
+            timer1.Stop();
 
             DialogResult res = MessageBox.Show("You win,go to the next level");
             if (res == DialogResult.OK)
             {
-                timer1.Stop();
-                this.Dispose();
+              
+                secondForm = new SecondPart();
+                secondForm.Show();
+                this.Hide();
             }      
             if(pictureBoxes.Count()!=0)
             ResetImage();          
 
         }
-               
-      
         private void timer2_Tick(object sender, EventArgs e)
         {
             HideImages();
+            allowClick = true;
             timer2.Stop();
         }
 
@@ -146,16 +150,13 @@ namespace _3in1Game
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            var res = new ThirdPart();
-            res.Show();
-        }
 
         private void startGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
             allowClick = true;
             timer1.Start();
         }
+
+       
     }
 }
