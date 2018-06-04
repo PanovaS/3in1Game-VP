@@ -32,10 +32,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lbl1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lbl2 = new System.Windows.Forms.Label();
             this.lbl3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.lbl2 = new System.Windows.Forms.Label();
             this.lblText = new System.Windows.Forms.Label();
             this.lblPoints = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -63,10 +63,10 @@
             // lbl1
             // 
             this.lbl1.AutoSize = true;
-            this.lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbl1.Location = new System.Drawing.Point(14, 23);
             this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(51, 16);
+            this.lbl1.Size = new System.Drawing.Size(52, 18);
             this.lbl1.TabIndex = 3;
             this.lbl1.Text = "label1";
             // 
@@ -80,13 +80,23 @@
             this.panel2.TabIndex = 15;
             this.panel2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseClick);
             // 
+            // lbl2
+            // 
+            this.lbl2.AutoSize = true;
+            this.lbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbl2.Location = new System.Drawing.Point(14, 24);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(52, 18);
+            this.lbl2.TabIndex = 4;
+            this.lbl2.Text = "label2";
+            // 
             // lbl3
             // 
             this.lbl3.AutoSize = true;
-            this.lbl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lbl3.Location = new System.Drawing.Point(14, 26);
             this.lbl3.Name = "lbl3";
-            this.lbl3.Size = new System.Drawing.Size(51, 16);
+            this.lbl3.Size = new System.Drawing.Size(52, 18);
             this.lbl3.TabIndex = 4;
             this.lbl3.Text = "label3";
             // 
@@ -110,24 +120,14 @@
             this.panel3.TabIndex = 16;
             this.panel3.MouseClick += new System.Windows.Forms.MouseEventHandler(this.panel3_MouseClick);
             // 
-            // lbl2
-            // 
-            this.lbl2.AutoSize = true;
-            this.lbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lbl2.Location = new System.Drawing.Point(14, 24);
-            this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(51, 16);
-            this.lbl2.TabIndex = 4;
-            this.lbl2.Text = "label2";
-            // 
             // lblText
             // 
             this.lblText.AutoSize = true;
-            this.lblText.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblText.Location = new System.Drawing.Point(35, 283);
+            this.lblText.Location = new System.Drawing.Point(59, 271);
             this.lblText.Name = "lblText";
-            this.lblText.Size = new System.Drawing.Size(45, 16);
+            this.lblText.Size = new System.Drawing.Size(66, 24);
             this.lblText.TabIndex = 22;
             this.lblText.Text = "label1";
             // 
@@ -181,7 +181,7 @@
             // 
             this.pictureBox1.Location = new System.Drawing.Point(232, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(219, 168);
+            this.pictureBox1.Size = new System.Drawing.Size(230, 168);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
@@ -195,7 +195,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(463, 308);
+            this.ClientSize = new System.Drawing.Size(484, 308);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

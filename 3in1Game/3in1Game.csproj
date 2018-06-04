@@ -53,6 +53,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SecondPart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecondPart.Designer.cs">
+      <DependentUpon>SecondPart.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThirdPart.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,14 +76,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
+    <EmbeddedResource Include="SecondPart.resx">
+      <DependentUpon>SecondPart.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ThirdPart.resx">
       <DependentUpon>ThirdPart.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,6 +138,30 @@
     <None Include="Resources\Gossip girl.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\lalaLand.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\La-La-Land-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maleficent.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MovieQuestion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\null.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Question.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Titanic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wonder.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\image_part_001.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -156,28 +189,85 @@
     <None Include="Resources\image_part_009.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\lalaLand.jpg" />
+    <None Include="Resources\image1_part_001.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\La-La-Land-1.jpg" />
+    <None Include="Resources\image1_part_002.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Maleficent.jpg" />
+    <None Include="Resources\image1_part_003.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\MovieQuestion.png" />
+    <None Include="Resources\image1_part_004.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\null.jpg" />
+    <None Include="Resources\image1_part_005.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Question.gif" />
+    <None Include="Resources\image1_part_006.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Titanic.jpg" />
+    <None Include="Resources\image1_part_007.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\wonder.png" />
+    <None Include="Resources\image1_part_008.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image1_part_009.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image2_part_001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image2_part_002.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image2_part_003.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image2_part_004.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image2_part_005.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image2_part_006.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image2_part_007.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image2_part_008.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image2_part_009.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image3_part_001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image3_part_002.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image3_part_003.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image3_part_004.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image3_part_005.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image3_part_006.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image3_part_007.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image3_part_008.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image3_part_009.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

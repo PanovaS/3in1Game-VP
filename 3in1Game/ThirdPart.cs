@@ -210,6 +210,7 @@ namespace _3in1Game
                         FirstPart.points += 10;
                     }
                 }
+                lblPoints.Text = FirstPart.points.ToString();
                 Guess.Enabled = false;
                 GameOver();
             }
