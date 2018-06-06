@@ -183,8 +183,15 @@ namespace _3in1Game
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Hit();
-            button1.Enabled = false;
+            if (radioButton1.Checked || radioButton2.Checked || radioButton3.Checked)
+            {
+                Hit();
+                button1.Enabled = false;
+            }
+            else
+            {
+                MessageBox.Show("You haven't selected any of the answers.\nTry again.");
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

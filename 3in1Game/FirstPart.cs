@@ -18,13 +18,22 @@ namespace _3in1Game
         int time = 60;
         SecondPart secondForm;
         public static int points;
-        
+        public static string Player1 { set; get; }
+
+        public static List<Player> igrachi = new List<Player>();
+        public static Player i;
+
+        bool click;
+
         public FirstPart()
         {
             InitializeComponent();
             setRandomImages();
             HideImages();
             points = 30;
+            lbwelcome.Visible = false;
+            click = false;
+         
         }
 
         private PictureBox[] pictureBoxes {
@@ -85,44 +94,46 @@ namespace _3in1Game
 
         private void clickImage(object sender, EventArgs e)
         {
-            var pic = (PictureBox)sender;
-            if (!allowClick) return;
-            if (firstGuess == null)
+            if (click)
             {
-                firstGuess = pic;
-                pic.Image = (Image)pic.Tag;
-                return;
-            }
-            pic.Image = (Image)pic.Tag;
-            if (pic.Image == firstGuess.Image && pic != firstGuess)
-            {
-                pic.Visible = firstGuess.Visible = false;
-              
+                var pic = (PictureBox)sender;
+                if (!allowClick) return;
+                if (firstGuess == null)
                 {
                     firstGuess = pic;
+                    pic.Image = (Image)pic.Tag;
+                    return;
                 }
-               HideImages();
-            }
-            else
-            {
-                allowClick = false;
-                timer2.Start();
-            }
-            firstGuess = null;
-            if (pictureBoxes.Any(p => p.Visible)) return;
-            timer1.Stop();
+                pic.Image = (Image)pic.Tag;
+                if (pic.Image == firstGuess.Image && pic != firstGuess)
+                {
+                    pic.Visible = firstGuess.Visible = false;
 
-            DialogResult res = MessageBox.Show("You win,go to the next level");
-            if (res == DialogResult.OK)
-            {
-              
-                secondForm = new SecondPart();
-                secondForm.Show();
-                this.Hide();
-            }      
-            if(pictureBoxes.Count()!=0)
-            ResetImage();          
+                    {
+                        firstGuess = pic;
+                    }
+                    HideImages();
+                }
+                else
+                {
+                    allowClick = false;
+                    timer2.Start();
+                }
+                firstGuess = null;
+                if (pictureBoxes.Any(p => p.Visible)) return;
+                timer1.Stop();
 
+                DialogResult res = MessageBox.Show("You win,go to the next level");
+                if (res == DialogResult.OK)
+                {
+
+                    secondForm = new SecondPart();
+                    secondForm.Show();
+                    this.Hide();
+                }
+                if (pictureBoxes.Count() != 0)
+                    ResetImage();
+            }
         }
         private void timer2_Tick(object sender, EventArgs e)
         {
@@ -153,10 +164,42 @@ namespace _3in1Game
 
         private void startGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            allowClick = true;
-            timer1.Start();
+            
+            if (player.Text != "") {
+                click = true;
+                allowClick = true;
+                Player1 = player.Text;
+                i = new Player();
+                i.Ime = Player1;
+                i.Poeni = 0;
+                
+
+                lbwelcome.Text = "Welcome " + Player1;
+                lbwelcome.Visible =true;
+                player.Enabled =false;
+
+
+                timer1.Start();
+               
+                
+
+            }
+            else MessageBox.Show("Enter your name!");
+           
         }
 
-       
+        private void player_Validating(object sender, CancelEventArgs e)
+        {
+            if (player.Text == "")
+            {
+                errorProvider1.SetError(player, "Enter your name!");
+            }
+            else
+            {
+                errorProvider1.Clear();
+            }
+        }
+
+     
     }
 }

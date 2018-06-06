@@ -58,9 +58,16 @@ namespace _3in1Game
             DialogResult dialog = MessageBox.Show("End of the game\n\nTotal points:" + FirstPart.points + " ", "Do you want to play again?", MessageBoxButtons.YesNo);
             if (dialog == DialogResult.Yes)
             {
-                form1 = new FirstPart();
-                this.Close();
-                form1.Show();
+                
+                    form1 = new FirstPart();
+                    
+                    this.Close();
+                    form1.Show();
+                
+              
+
+
+                
 
             }
             else if (dialog == DialogResult.No)
@@ -106,7 +113,7 @@ namespace _3in1Game
             word.movieAssociation.Add("Love story");
             word.movieAssociation.Add("Emma Stone");
             word.movieAssociation.Add("Ground");
-            word.movieAssociation.Add("Los Angelese");
+            word.movieAssociation.Add("Los Angeles");
             word.image = Properties.Resources.lalaLand;
             words.Add(word);
 
@@ -212,6 +219,28 @@ namespace _3in1Game
                 }
                 lblPoints.Text = FirstPart.points.ToString();
                 Guess.Enabled = false;
+
+                FirstPart.i.Poeni = FirstPart.points;
+
+                FirstPart.igrachi.Add(FirstPart.i);
+
+                FirstPart.igrachi = FirstPart.igrachi.OrderByDescending(x => x.Poeni).ToList();
+
+                string s = "";
+                int br = FirstPart.igrachi.Count;
+
+                if (br > 3)
+                {
+                    br = 3;
+                }
+                for (int i = 0; i < br; i++)
+                {
+                    s += FirstPart.igrachi.ElementAt(i).Ime + "\t total points: " + FirstPart.igrachi.ElementAt(i).Poeni + "\n";
+                }
+
+
+                MessageBox.Show(s, "Најдобри играчи");
+
                 GameOver();
             }
             else
@@ -225,6 +254,10 @@ namespace _3in1Game
         {
             if (txtName.Text != "") GuessWord();
             else MessageBox.Show("Enter movie name!");
+
+           
+
+
         }
 
         private void txtName_Validating(object sender, CancelEventArgs e)
