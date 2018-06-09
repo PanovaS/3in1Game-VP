@@ -233,10 +233,17 @@ namespace _3in1Game
 
         }
         public void bestPlayers() {
-            Login.i.Poeni = FirstPart.points;
 
-            Login.igrachi.Add(Login.i);
+            if (Login.igrachi.Contains(Login.i) && Login.i.Poeni == FirstPart.points)
+            {
 
+            }
+            else
+            {
+                Login.i.Poeni = FirstPart.points;
+
+                Login.igrachi.Add(Login.i);
+            }
             Login.igrachi = Login.igrachi.OrderByDescending(x => x.Poeni).ToList();
 
             string s = "";

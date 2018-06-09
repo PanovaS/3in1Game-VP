@@ -27,7 +27,7 @@ namespace _3in1Game
             InitializeComponent();
             setRandomImages();
             HideImages();
-            points = 30;
+            points = 0;
             lbwelcome.Visible = false;
             click = false;
             loginForm = new Login();
@@ -124,6 +124,7 @@ namespace _3in1Game
                 }
                 firstGuess = null;
                 if (pictureBoxes.Any(p => p.Visible)) return;
+                points = time;
                 timer1.Stop();
                 label3.Visible = true;
                 button2.Visible = true;
@@ -147,6 +148,7 @@ namespace _3in1Game
                 timer1.Stop();
                 MessageBox.Show("Out of time");
                 ResetImage();
+                timer1.Start();
             }
             if (time.ToString().Length == 1)
             {
@@ -165,6 +167,7 @@ namespace _3in1Game
             secondForm = new SecondPart();
             secondForm.Show();
             this.Hide();
+            
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -172,16 +175,21 @@ namespace _3in1Game
             click = true;
             allowClick = true;
             timer1.Start();
-           
+
+            button1.Visible = false;
+            button3.Visible = true;
+
+
+
         }
 
-        
-
-        private void button3_Click_1(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
-            secondForm = new SecondPart();
-            secondForm.Show();
-            this.Hide();
+            click = false;
+            allowClick = false;
+            timer1.Stop();
+            button1.Visible = true;
+            button3.Visible = false;
         }
     }
     }

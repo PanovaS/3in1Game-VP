@@ -157,9 +157,6 @@
     <None Include="Resources\MovieQuestion.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\null.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Question.gif" />
   </ItemGroup>
   <ItemGroup>
@@ -167,33 +164,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\wonder.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\image_part_001.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\image_part_002.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\image_part_003.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\image_part_004.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\image_part_005.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\image_part_006.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\image_part_007.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\image_part_008.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\image_part_009.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\image1_part_009.jpg" />
@@ -223,31 +193,34 @@
     <None Include="Resources\image1_part_008.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\image3_part_001.jpg" />
+    <None Include="Resources\null.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\image3_part_002.jpg" />
+    <None Include="Resources\image_part_001.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\image3_part_003.jpg" />
+    <None Include="Resources\image_part_002.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\image3_part_004.jpg" />
+    <None Include="Resources\image_part_003.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\image3_part_005.jpg" />
+    <None Include="Resources\image_part_004.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\image3_part_006.jpg" />
+    <None Include="Resources\image_part_005.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\image3_part_007.jpg" />
+    <None Include="Resources\image_part_006.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\image3_part_008.jpg" />
+    <None Include="Resources\image_part_007.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\image3_part_009.jpg" />
+    <None Include="Resources\image_part_008.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_009.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\image2_part_001.jpg" />
@@ -275,6 +248,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\image2_part_009.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image3_part_001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image3_part_002.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image3_part_003.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image3_part_004.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image3_part_005.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image3_part_006.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image3_part_007.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image3_part_008.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image3_part_009.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Pause-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webp.net-resizeimage.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

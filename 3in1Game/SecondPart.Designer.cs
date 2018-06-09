@@ -41,6 +41,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -81,7 +82,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Algerian", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Green;
-            this.label5.Location = new System.Drawing.Point(464, 319);
+            this.label5.Location = new System.Drawing.Point(479, 319);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(228, 24);
             this.label5.TabIndex = 18;
@@ -164,9 +165,8 @@
             this.lblPoints2.ForeColor = System.Drawing.Color.MidnightBlue;
             this.lblPoints2.Location = new System.Drawing.Point(618, 467);
             this.lblPoints2.Name = "lblPoints2";
-            this.lblPoints2.Size = new System.Drawing.Size(30, 24);
+            this.lblPoints2.Size = new System.Drawing.Size(0, 24);
             this.lblPoints2.TabIndex = 27;
-            this.lblPoints2.Text = "30";
             // 
             // label1
             // 
@@ -190,9 +190,9 @@
             this.groupBox1.Controls.Add(this.pictureBox3);
             this.groupBox1.Controls.Add(this.pictureBox2);
             this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Location = new System.Drawing.Point(16, 111);
+            this.groupBox1.Location = new System.Drawing.Point(16, 108);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(442, 443);
+            this.groupBox1.Size = new System.Drawing.Size(457, 446);
             this.groupBox1.TabIndex = 29;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Puzzle ";
@@ -202,81 +202,93 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Green;
-            this.label3.Location = new System.Drawing.Point(479, 343);
+            this.label3.Location = new System.Drawing.Point(491, 343);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(200, 21);
             this.label3.TabIndex = 30;
             this.label3.Text = "You won 10 points";
             this.label3.Visible = false;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Algerian", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Green;
+            this.label8.Location = new System.Drawing.Point(478, 291);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(258, 52);
+            this.label8.TabIndex = 31;
+            this.label8.Text = "Congratulations! \r\nYou won 30 points";
+            this.label8.Visible = false;
+            // 
             // pictureBox7
             // 
-            this.pictureBox7.Location = new System.Drawing.Point(282, 288);
+            this.pictureBox7.Location = new System.Drawing.Point(294, 295);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(126, 131);
+            this.pictureBox7.Size = new System.Drawing.Size(129, 129);
             this.pictureBox7.TabIndex = 8;
             this.pictureBox7.TabStop = false;
             this.pictureBox7.Click += new System.EventHandler(this.SwitchPictureBox);
             // 
             // pictureBox8
             // 
-            this.pictureBox8.Location = new System.Drawing.Point(162, 288);
+            this.pictureBox8.Location = new System.Drawing.Point(165, 295);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(124, 131);
+            this.pictureBox8.Size = new System.Drawing.Size(129, 129);
             this.pictureBox8.TabIndex = 7;
             this.pictureBox8.TabStop = false;
             this.pictureBox8.Click += new System.EventHandler(this.SwitchPictureBox);
             // 
             // pictureBox9
             // 
-            this.pictureBox9.Location = new System.Drawing.Point(36, 288);
+            this.pictureBox9.Location = new System.Drawing.Point(36, 295);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(129, 131);
+            this.pictureBox9.Size = new System.Drawing.Size(129, 129);
             this.pictureBox9.TabIndex = 6;
             this.pictureBox9.TabStop = false;
             this.pictureBox9.Click += new System.EventHandler(this.SwitchPictureBox);
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(282, 163);
+            this.pictureBox4.Location = new System.Drawing.Point(294, 166);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(126, 128);
+            this.pictureBox4.Size = new System.Drawing.Size(129, 129);
             this.pictureBox4.TabIndex = 5;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.SwitchPictureBox);
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(162, 163);
+            this.pictureBox5.Location = new System.Drawing.Point(165, 166);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(124, 128);
+            this.pictureBox5.Size = new System.Drawing.Size(129, 129);
             this.pictureBox5.TabIndex = 4;
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Click += new System.EventHandler(this.SwitchPictureBox);
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Location = new System.Drawing.Point(36, 163);
+            this.pictureBox6.Location = new System.Drawing.Point(36, 166);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(129, 128);
+            this.pictureBox6.Size = new System.Drawing.Size(129, 129);
             this.pictureBox6.TabIndex = 3;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Click += new System.EventHandler(this.SwitchPictureBox);
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(282, 37);
+            this.pictureBox3.Location = new System.Drawing.Point(294, 37);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(126, 130);
+            this.pictureBox3.Size = new System.Drawing.Size(129, 129);
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.SwitchPictureBox);
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(162, 37);
+            this.pictureBox2.Location = new System.Drawing.Point(165, 37);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(124, 129);
+            this.pictureBox2.Size = new System.Drawing.Size(129, 129);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.SwitchPictureBox);
@@ -318,6 +330,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(734, 601);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button2);
@@ -375,5 +388,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label8;
     }
 }

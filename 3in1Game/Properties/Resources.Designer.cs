@@ -593,6 +593,16 @@ namespace _3in1Game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Webp_net_resizeimage {
+            get {
+                object obj = ResourceManager.GetObject("Webp_net_resizeimage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap wonder {
             get {
                 object obj = ResourceManager.GetObject("wonder", resourceCulture);

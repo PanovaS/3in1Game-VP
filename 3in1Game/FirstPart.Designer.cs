@@ -335,13 +335,15 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(609, 142);
+            this.button3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button3.Image = global::_3in1Game.Properties.Resources.Webp_net_resizeimage;
+            this.button3.Location = new System.Drawing.Point(156, 12);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(48, 40);
             this.button3.TabIndex = 31;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Visible = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // FirstPart
             // 

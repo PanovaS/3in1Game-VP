@@ -27,6 +27,7 @@ namespace _3in1Game
             InitializeComponent();
             this.Size = new Size(850, 600);
             isHit = false;
+            lblPoints2.Text = FirstPart.points.ToString();
             correct.Add("Will Smith");
             correct.Add("William Levy");
             correct.Add("Kate Winslet");
@@ -58,7 +59,7 @@ namespace _3in1Game
             });
 
             int ra = r.Next(0, 4);
-            if (ra == 0)
+           if (ra == 0)
             {
                 lstOriginalPicturesList = images;
                 radioButton1.Text = "Emma Stone";
@@ -111,8 +112,11 @@ namespace _3in1Game
             }
             else
             {
-                FirstPart.points = 30;
                 label6.Visible = true;
+                DialogResult dialog = MessageBox.Show("You lost", "Try again", MessageBoxButtons.OK);
+                Login loginForm = new Login();
+                this.Close();
+                loginForm.Show();
             }
             lblPoints2.Text = FirstPart.points.ToString();
         }
@@ -131,10 +135,11 @@ namespace _3in1Game
                 for (int i = 0; i < 9; i++)
                 {
                     indexes.Remove((j = indexes[r.Next(0, indexes.Count)]));
-                    ((PictureBox)groupBox1.Controls[i]).Image = lstOriginalPicturesList[j];
+                    ((PictureBox)groupBox1.Controls[8-i]).Image = lstOriginalPicturesList[j];
+                   ((PictureBox)groupBox1.Controls[8-i]).Image.Tag = j; //prvo
                     if (j == 9)
                     {
-                        inNullSliceIndex = i;
+                        inNullSliceIndex = 8-i;
                     }
 
                 }
@@ -159,16 +164,21 @@ namespace _3in1Game
                 if (FourBrothers.Contains(inNullSliceIndex))
                 {
                     ((PictureBox)groupBox1.Controls[inNullSliceIndex]).Image = ((PictureBox)groupBox1.Controls[inPictureBoxIndex]).Image;
+
                     ((PictureBox)groupBox1.Controls[inPictureBoxIndex]).Image = lstOriginalPicturesList[9];
+                   ((PictureBox)groupBox1.Controls[inPictureBoxIndex]).Image.Tag = 9;
+
                     inNullSliceIndex = inPictureBoxIndex;
                     if (CheckWin())
                     {
 
-                        (groupBox1.Controls[8] as PictureBox).Image = lstOriginalPicturesList[8];
+                        (groupBox1.Controls[inNullSliceIndex] as PictureBox).Image = lstOriginalPicturesList[8];
                         FirstPart.points += 30;
                         button2.Enabled = true;
                         lblPoints2.Text = FirstPart.points.ToString();
-                        Shuffle();
+                        //Shuffle();
+                        label8.Visible = true;
+                        button2.Enabled = true;
                     }
                 }
             }
@@ -176,14 +186,14 @@ namespace _3in1Game
         public bool CheckWin()
         {
             int i;
-            for (i = 0; i < 8; i++)
+            for (i = 8; i >0; i--)
             {
-                if ((groupBox1.Controls[i] as PictureBox).Image != lstOriginalPicturesList[i])
+               if((Convert.ToInt32((groupBox1.Controls[i] as PictureBox).Image.Tag) != 8-i)) 
                 {
                     break;
                 }
             }
-            if (i == 8) return true;
+             if (i == 0) return true;
             else return false;
         }
 
@@ -194,6 +204,7 @@ namespace _3in1Game
                 Hit();
                 button1.Enabled = false;
                 button2.Enabled = true;
+                groupBox1.Visible = false;
             }
             else
             {
@@ -207,7 +218,5 @@ namespace _3in1Game
             thirdForm.Show();
             this.Close();
         }
-
-      
     }
 }
