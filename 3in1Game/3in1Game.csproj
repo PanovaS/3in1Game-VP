@@ -51,6 +51,12 @@
     <Compile Include="FirstPart.Designer.cs">
       <DependentUpon>FirstPart.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -74,6 +80,9 @@
     <Compile Include="Words.cs" />
     <EmbeddedResource Include="FirstPart.resx">
       <DependentUpon>FirstPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -125,9 +134,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\9.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\33962695_2064983736864475_5653094645723299840_n.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\33982938_2064994710196711_794676920942854144_n.png" />
@@ -190,6 +196,9 @@
     <None Include="Resources\image_part_009.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\image1_part_009.jpg" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\image1_part_001.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -212,36 +221,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\image1_part_008.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\image1_part_009.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\image2_part_001.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\image2_part_002.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\image2_part_003.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\image2_part_004.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\image2_part_005.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\image2_part_006.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\image2_part_007.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\image2_part_008.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\image2_part_009.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\image3_part_001.jpg" />
@@ -269,6 +248,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\image3_part_009.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image2_part_001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image2_part_002.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image2_part_003.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image2_part_004.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image2_part_005.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image2_part_006.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image2_part_007.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image2_part_008.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image2_part_009.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

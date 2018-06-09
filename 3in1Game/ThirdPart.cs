@@ -17,7 +17,7 @@ namespace _3in1Game
         public Words selectWord { get; set; }
         public bool clicked { get; set; }
         public FirstPart form1 { get; set; }
-
+        public Login loginForm;
 
         int time = 25;
         Timer timer = new Timer
@@ -42,9 +42,11 @@ namespace _3in1Game
             timer.Tick += delegate
             {
                 time--;
-                if (time < 0)
+                if (time <= 0)
                 {
                     timer.Stop();
+                    label8.Visible = true;
+                    label9.Visible = false;
                     GameOver();
 
                 }
@@ -55,25 +57,24 @@ namespace _3in1Game
         public void GameOver()
         {
             timer.Stop();
-            DialogResult dialog = MessageBox.Show("End of the game\n\nTotal points:" + FirstPart.points + " ", "Do you want to play again?", MessageBoxButtons.YesNo);
+            DialogResult dialog = MessageBox.Show("End of the game\n\nTotal points:" + FirstPart.points + " ", "Do you want to play again?", MessageBoxButtons.YesNoCancel);
             if (dialog == DialogResult.Yes)
             {
-                
-                    form1 = new FirstPart();
-                    
-                    this.Close();
-                    form1.Show();
-                
-              
 
-
-                
-
+                loginForm = new Login();
+                this.Close();
+                loginForm.Show();
             }
             else if (dialog == DialogResult.No)
             {
                 Application.Exit();
             }
+            else if (dialog == DialogResult.Cancel)
+            {
+                lblText.Text = "00: " + "00";
+            }
+
+
         }
 
         public void HideLabels()
@@ -170,7 +171,6 @@ namespace _3in1Game
                 lbl3.Text = selectWord.movieAssociation.ElementAt(r.Next(0, 6));
 
             }
-            //pictureBox1.Image = selectWord.image;
         }
 
         private void panel1_MouseClick(object sender, MouseEventArgs e)
@@ -217,36 +217,42 @@ namespace _3in1Game
                         FirstPart.points += 10;
                     }
                 }
-                lblPoints.Text = FirstPart.points.ToString();
+                string s1 = "";
                 Guess.Enabled = false;
-
-                FirstPart.i.Poeni = FirstPart.points;
-
-                FirstPart.igrachi.Add(FirstPart.i);
-
-                FirstPart.igrachi = FirstPart.igrachi.OrderByDescending(x => x.Poeni).ToList();
-
-                string s = "";
-                int br = FirstPart.igrachi.Count;
-
-                if (br > 3)
-                {
-                    br = 3;
-                }
-                for (int i = 0; i < br; i++)
-                {
-                    s += FirstPart.igrachi.ElementAt(i).Ime + "\t total points: " + FirstPart.igrachi.ElementAt(i).Poeni + "\n";
-                }
-
-
-                MessageBox.Show(s, "Најдобри играчи");
-
+                s1 += "Congratulations " + Login.i.Ime + ", you hit the movie!";
+                label9.Visible = false;
+                label7.Text = s1;
+                label7.Visible = true;
+                lblPoints.Text = FirstPart.points.ToString();
                 GameOver();
             }
             else
             {
-                MessageBox.Show("Incorrect movie name.");
+                label9.Visible = true;
             }
+
+        }
+        public void bestPlayers() {
+            Login.i.Poeni = FirstPart.points;
+
+            Login.igrachi.Add(Login.i);
+
+            Login.igrachi = Login.igrachi.OrderByDescending(x => x.Poeni).ToList();
+
+            string s = "";
+            int br = Login.igrachi.Count;
+
+            if (br > 3)
+            {
+                br = 3;
+            }
+            for (int i = 0; i < br; i++)
+            {
+                s += Login.igrachi.ElementAt(i).Ime + "\t total points: " + Login.igrachi.ElementAt(i).Poeni + "\n";
+
+            }
+
+            MessageBox.Show(s, "Best players: ");
 
         }
 
@@ -254,10 +260,6 @@ namespace _3in1Game
         {
             if (txtName.Text != "") GuessWord();
             else MessageBox.Show("Enter movie name!");
-
-           
-
-
         }
 
         private void txtName_Validating(object sender, CancelEventArgs e)
@@ -270,6 +272,29 @@ namespace _3in1Game
             {
                 errorProvider1.Clear();
             }
+        }
+
+        private void bestPlayersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            bestPlayers();
+        }
+
+        private void playAgainToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            timer.Stop();
+            DialogResult dialog = MessageBox.Show("Are you sure?", "Do you want to play again?", MessageBoxButtons.YesNoCancel);
+            if (dialog == DialogResult.Yes)
+            {
+
+                loginForm = new Login();
+                this.Close();
+                loginForm.Show();
+            }
+            else if (dialog == DialogResult.No)
+            {
+                Application.Exit();
+            }
+
         }
     }
 }

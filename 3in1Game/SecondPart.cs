@@ -25,6 +25,7 @@ namespace _3in1Game
         public SecondPart()
         {
             InitializeComponent();
+            this.Size = new Size(850, 600);
             isHit = false;
             correct.Add("Will Smith");
             correct.Add("William Levy");
@@ -105,7 +106,7 @@ namespace _3in1Game
             if (correct.Contains(name))
             {
                 label5.Visible = true;
-
+                label3.Visible = true;
                 FirstPart.points += 10;
             }
             else
@@ -148,7 +149,11 @@ namespace _3in1Game
             if (inNullSliceIndex != inPictureBoxIndex)
             {
                 List<int> FourBrothers = new List<int>(new int[] {
-                    inPictureBoxIndex-1,inPictureBoxIndex-3,inPictureBoxIndex+1,inPictureBoxIndex+3 });
+                    inPictureBoxIndex-1,inPictureBoxIndex-2,inPictureBoxIndex-3,inPictureBoxIndex-4,
+                    inPictureBoxIndex-5,inPictureBoxIndex-6,inPictureBoxIndex-7,inPictureBoxIndex-8,
+                    inPictureBoxIndex +1,inPictureBoxIndex+2,inPictureBoxIndex+3,inPictureBoxIndex+4,
+                    inPictureBoxIndex+5,inPictureBoxIndex+6,inPictureBoxIndex+7,inPictureBoxIndex+8
+                });
 
 
                 if (FourBrothers.Contains(inNullSliceIndex))
@@ -161,6 +166,7 @@ namespace _3in1Game
 
                         (groupBox1.Controls[8] as PictureBox).Image = lstOriginalPicturesList[8];
                         FirstPart.points += 30;
+                        button2.Enabled = true;
                         lblPoints2.Text = FirstPart.points.ToString();
                         Shuffle();
                     }
@@ -187,6 +193,7 @@ namespace _3in1Game
             {
                 Hit();
                 button1.Enabled = false;
+                button2.Enabled = true;
             }
             else
             {
@@ -200,5 +207,7 @@ namespace _3in1Game
             thirdForm.Show();
             this.Close();
         }
+
+      
     }
 }

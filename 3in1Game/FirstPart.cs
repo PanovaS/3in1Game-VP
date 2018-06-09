@@ -12,16 +12,13 @@ namespace _3in1Game
 {
     public partial class FirstPart : Form
     {
+        Login loginForm;
         bool allowClick = false;
         PictureBox firstGuess;
         Random r = new Random();
         int time = 60;
         SecondPart secondForm;
         public static int points;
-        public static string Player1 { set; get; }
-
-        public static List<Player> igrachi = new List<Player>();
-        public static Player i;
 
         bool click;
 
@@ -33,12 +30,17 @@ namespace _3in1Game
             points = 30;
             lbwelcome.Visible = false;
             click = false;
-         
+            loginForm = new Login();
+            lbwelcome.Text = "Welcome " + Login.i.Ime;
+            lbwelcome.Visible = true;
+            this.Size = new Size(750, 640);
+
         }
 
         private PictureBox[] pictureBoxes {
 
             get { return Controls.OfType<PictureBox>().ToArray(); }
+           
         }
 
         private static IEnumerable<Image> images
@@ -62,6 +64,7 @@ namespace _3in1Game
             HideImages();
             setRandomImages();
             time = 60;
+           
             //timer1.Start();
         }
         public void HideImages()
@@ -122,17 +125,11 @@ namespace _3in1Game
                 firstGuess = null;
                 if (pictureBoxes.Any(p => p.Visible)) return;
                 timer1.Stop();
-
-                DialogResult res = MessageBox.Show("You win,go to the next level");
-                if (res == DialogResult.OK)
-                {
-
-                    secondForm = new SecondPart();
-                    secondForm.Show();
-                    this.Hide();
-                }
-                if (pictureBoxes.Count() != 0)
-                    ResetImage();
+                label3.Visible = true;
+                button2.Visible = true;
+                button1.Visible = false;
+                //if (pictureBoxes.Count() != 0)
+                //ResetImage();
             }
         }
         private void timer2_Tick(object sender, EventArgs e)
@@ -161,45 +158,31 @@ namespace _3in1Game
             }
         }
 
+       
 
-        private void startGameToolStripMenuItem_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            
-            if (player.Text != "") {
-                click = true;
-                allowClick = true;
-                Player1 = player.Text;
-                i = new Player();
-                i.Ime = Player1;
-                i.Poeni = 0;
-                
+            secondForm = new SecondPart();
+            secondForm.Show();
+            this.Hide();
+        }
 
-                lbwelcome.Text = "Welcome " + Player1;
-                lbwelcome.Visible =true;
-                player.Enabled =false;
-
-
-                timer1.Start();
-               
-                
-
-            }
-            else MessageBox.Show("Enter your name!");
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            click = true;
+            allowClick = true;
+            timer1.Start();
            
         }
 
-        private void player_Validating(object sender, CancelEventArgs e)
-        {
-            if (player.Text == "")
-            {
-                errorProvider1.SetError(player, "Enter your name!");
-            }
-            else
-            {
-                errorProvider1.Clear();
-            }
-        }
+        
 
-     
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            secondForm = new SecondPart();
+            secondForm.Show();
+            this.Hide();
+        }
     }
-}
+    }
+

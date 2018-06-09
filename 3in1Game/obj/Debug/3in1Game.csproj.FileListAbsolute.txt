@@ -77,3 +77,16 @@ C:\Users\Dell\Desktop\verzija_1\3in1Game-master\3in1Game\obj\Debug\3in1Game.cspr
 C:\Users\Dell\Desktop\verzija_1\3in1Game-master\3in1Game\obj\Debug\3in1Game.csproj.CoreCompileInputs.cache
 C:\Users\Dell\Desktop\verzija_1\3in1Game-master\3in1Game\obj\Debug\3in1Game.exe
 C:\Users\Dell\Desktop\verzija_1\3in1Game-master\3in1Game\obj\Debug\3in1Game.pdb
+C:\Users\User\Desktop\3in1Game-VP\3in1Game\3in1Game\bin\Debug\3in1Game.exe.config
+C:\Users\User\Desktop\3in1Game-VP\3in1Game\3in1Game\bin\Debug\3in1Game.exe
+C:\Users\User\Desktop\3in1Game-VP\3in1Game\3in1Game\bin\Debug\3in1Game.pdb
+C:\Users\User\Desktop\3in1Game-VP\3in1Game\3in1Game\obj\Debug\3in1Game.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\3in1Game-VP\3in1Game\3in1Game\obj\Debug\_3in1Game.FirstPart.resources
+C:\Users\User\Desktop\3in1Game-VP\3in1Game\3in1Game\obj\Debug\_3in1Game.Login.resources
+C:\Users\User\Desktop\3in1Game-VP\3in1Game\3in1Game\obj\Debug\_3in1Game.Properties.Resources.resources
+C:\Users\User\Desktop\3in1Game-VP\3in1Game\3in1Game\obj\Debug\_3in1Game.SecondPart.resources
+C:\Users\User\Desktop\3in1Game-VP\3in1Game\3in1Game\obj\Debug\_3in1Game.ThirdPart.resources
+C:\Users\User\Desktop\3in1Game-VP\3in1Game\3in1Game\obj\Debug\3in1Game.csproj.GenerateResource.Cache
+C:\Users\User\Desktop\3in1Game-VP\3in1Game\3in1Game\obj\Debug\3in1Game.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\3in1Game-VP\3in1Game\3in1Game\obj\Debug\3in1Game.exe
+C:\Users\User\Desktop\3in1Game-VP\3in1Game\3in1Game\obj\Debug\3in1Game.pdb
