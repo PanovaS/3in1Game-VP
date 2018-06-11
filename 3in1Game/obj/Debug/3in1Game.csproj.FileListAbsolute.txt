@@ -103,3 +103,19 @@ C:\Users\Aleksandar\Desktop\VP\5. dizajn\3in1Game\3in1Game\obj\Debug\3in1Game.cs
 C:\Users\Aleksandar\Desktop\VP\5. dizajn\3in1Game\3in1Game\obj\Debug\3in1Game.csproj.CoreCompileInputs.cache
 C:\Users\Aleksandar\Desktop\VP\5. dizajn\3in1Game\3in1Game\obj\Debug\3in1Game.exe
 C:\Users\Aleksandar\Desktop\VP\5. dizajn\3in1Game\3in1Game\obj\Debug\3in1Game.pdb
+C:\Users\Aleksandar\Desktop\VP\6. new level\3in1Game\3in1Game\bin\Debug\3in1Game.exe.config
+C:\Users\Aleksandar\Desktop\VP\6. new level\3in1Game\3in1Game\bin\Debug\3in1Game.exe
+C:\Users\Aleksandar\Desktop\VP\6. new level\3in1Game\3in1Game\bin\Debug\3in1Game.pdb
+C:\Users\Aleksandar\Desktop\VP\6. new level\3in1Game\3in1Game\obj\Debug\3in1Game.csprojResolveAssemblyReference.cache
+C:\Users\Aleksandar\Desktop\VP\6. new level\3in1Game\3in1Game\obj\Debug\_3in1Game.FirstPart.resources
+C:\Users\Aleksandar\Desktop\VP\6. new level\3in1Game\3in1Game\obj\Debug\_3in1Game.Login.resources
+C:\Users\Aleksandar\Desktop\VP\6. new level\3in1Game\3in1Game\obj\Debug\_3in1Game.Properties.Resources.resources
+C:\Users\Aleksandar\Desktop\VP\6. new level\3in1Game\3in1Game\obj\Debug\_3in1Game.SecondPart.resources
+C:\Users\Aleksandar\Desktop\VP\6. new level\3in1Game\3in1Game\obj\Debug\_3in1Game.ThirdPart.resources
+C:\Users\Aleksandar\Desktop\VP\6. new level\3in1Game\3in1Game\obj\Debug\3in1Game.csproj.GenerateResource.Cache
+C:\Users\Aleksandar\Desktop\VP\6. new level\3in1Game\3in1Game\obj\Debug\3in1Game.csproj.CoreCompileInputs.cache
+C:\Users\Aleksandar\Desktop\VP\6. new level\3in1Game\3in1Game\obj\Debug\3in1Game.exe
+C:\Users\Aleksandar\Desktop\VP\6. new level\3in1Game\3in1Game\obj\Debug\3in1Game.pdb
+C:\Users\Aleksandar\Desktop\VP\6. new level\3in1Game\3in1Game\obj\Debug\_3in1Game.FirstPartEasy.resources
+C:\Users\Aleksandar\Desktop\VP\6. new level\3in1Game\3in1Game\obj\Debug\_3in1Game.SecondPartEasy.resources
+C:\Users\Aleksandar\Desktop\VP\6. new level\3in1Game\3in1Game\obj\Debug\_3in1Game.ThirdPartEasy.resources

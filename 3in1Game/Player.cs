@@ -13,8 +13,9 @@ namespace _3in1Game
         }
         public string Ime { set; get; }
         public int Poeni { set; get; }
+        public string Mode { set; get; }
 
-  
+
 
         public override string ToString()
         {

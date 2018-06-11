@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace _3in1Game
 {
-    public partial class ThirdPart : Form
+    public partial class ThirdPartEasy : Form
     {
         public List<Words> words { get; set; }
         public Words word { get; set; }
         public Words selectWord { get; set; }
         public bool clicked { get; set; }
-        public FirstPart form1 { get; set; }
+        public FirstPartEasy form1 { get; set; }
         public Login loginForm;
 
         int time = 25;
@@ -25,12 +25,12 @@ namespace _3in1Game
             Interval = 1000
         };
 
-        public ThirdPart()
+        public ThirdPartEasy()
         {
             InitializeComponent();
             words = new List<Words>();
             word = new Words();
-            lblPoints.Text = FirstPart.points.ToString();
+            lblPoints.Text = FirstPartEasy.points.ToString();
             Fill();
             HideLabels();
             Selected();
@@ -57,7 +57,7 @@ namespace _3in1Game
         public void GameOver()
         {
             timer.Stop();
-            DialogResult dialog = MessageBox.Show("End of the game\n\nTotal points: " + FirstPart.points + " ", "Do you want to play again?", MessageBoxButtons.YesNoCancel);
+            DialogResult dialog = MessageBox.Show("End of the game\n\nTotal points: " + FirstPartEasy.points + " ", "Do you want to play again?", MessageBoxButtons.YesNoCancel);
             if (dialog == DialogResult.Yes)
             {
 
@@ -89,21 +89,21 @@ namespace _3in1Game
             word.MovieName = "MALEFICENT";
             word.movieAssociation.Add("Angelina Jolie");
             word.movieAssociation.Add("Evil");
-            word.movieAssociation.Add("Noxious");
+            word.movieAssociation.Add("Infant princess");
             word.movieAssociation.Add("Sleeping Beauty");
-            word.movieAssociation.Add("Vicious");
-            word.movieAssociation.Add("Hostile");
+            word.movieAssociation.Add("Ruthless betrayal");
+            word.movieAssociation.Add("Aurora");
             word.image = Properties.Resources.Maleficent;
             words.Add(word);
 
             word = new Words();
             word.MovieName = "GOSSIP GIRL";
             word.movieAssociation.Add("Blake Lively");
-            word.movieAssociation.Add("Empire State");
-            word.movieAssociation.Add("Chatter");
-            word.movieAssociation.Add("Female");
-            word.movieAssociation.Add("Series");
-            word.movieAssociation.Add("Defamation");
+            word.movieAssociation.Add("XOXO");
+            word.movieAssociation.Add("Scandals");
+            word.movieAssociation.Add("Upper East Side of New York");
+            word.movieAssociation.Add("Teen series");
+            word.movieAssociation.Add("Blair Waldorf");
             word.image = Properties.Resources.Gossip_girl;
             words.Add(word);
 
@@ -113,7 +113,7 @@ namespace _3in1Game
             word.movieAssociation.Add("Jazz pianist");
             word.movieAssociation.Add("Love story");
             word.movieAssociation.Add("Emma Stone");
-            word.movieAssociation.Add("Ground");
+            word.movieAssociation.Add("Musical");
             word.movieAssociation.Add("Los Angeles");
             word.image = Properties.Resources.lalaLand;
             words.Add(word);
@@ -121,10 +121,10 @@ namespace _3in1Game
             word = new Words();
             word.MovieName = "TITANIC";
             word.movieAssociation.Add("Leonardo DiCaprio");
-            word.movieAssociation.Add("Ship");
+            word.movieAssociation.Add("My heart will go on");
             word.movieAssociation.Add("Iceberg");
             word.movieAssociation.Add("Sink");
-            word.movieAssociation.Add("Passengers");
+            word.movieAssociation.Add("Kate Winslet");
             word.movieAssociation.Add("Ocean");
             word.image = Properties.Resources.Titanic;
             words.Add(word);
@@ -135,19 +135,19 @@ namespace _3in1Game
             word.movieAssociation.Add("Superhero");
             word.movieAssociation.Add("Revenge");
             word.movieAssociation.Add("Healing powers");
-            word.movieAssociation.Add("Oscar");
-            word.movieAssociation.Add("Dying");
+            word.movieAssociation.Add("Mutant");
+            word.movieAssociation.Add("Wade Wilson");
             word.image = Properties.Resources.Deadpool;
             words.Add(word);
 
             word = new Words();
             word.MovieName = "WONDER WOMAN";
             word.movieAssociation.Add("Gal Gadot");
-            word.movieAssociation.Add("Female");
+            word.movieAssociation.Add("Diana");
             word.movieAssociation.Add("Amazonian warrior");
             word.movieAssociation.Add("Fighting in war");
-            word.movieAssociation.Add("Girl power");
-            word.movieAssociation.Add("Superhero movie");
+            word.movieAssociation.Add("Hidden island");
+            word.movieAssociation.Add("DC Comics character");
             word.image = Properties.Resources.wonder;
             words.Add(word);
 
@@ -200,21 +200,21 @@ namespace _3in1Game
             {
                 if (lbl2.Visible == true && lbl3.Visible == true && clicked == true)
                 {
-                    FirstPart.points += 5;
+                    FirstPartEasy.points += 5;
                 }
                 else
                 {
                     if (lbl2.Visible == false)
                     {
-                        FirstPart.points += 5;
+                        FirstPartEasy.points += 5;
                     }
                     if (lbl3.Visible == false)
                     {
-                        FirstPart.points += 5;
+                        FirstPartEasy.points += 5;
                     }
                     if (clicked == false)
                     {
-                        FirstPart.points += 10;
+                        FirstPartEasy.points += 10;
                     }
                 }
                 string s1 = "";
@@ -223,7 +223,7 @@ namespace _3in1Game
                 label9.Visible = false;
                 label7.Text = s1;
                 label7.Visible = true;
-                lblPoints.Text = FirstPart.points.ToString();
+                lblPoints.Text = FirstPartEasy.points.ToString();
                 GameOver();
             }
             else
@@ -232,15 +232,16 @@ namespace _3in1Game
             }
 
         }
-        public void bestPlayers() {
+        public void bestPlayers()
+        {
 
-            if (Login.igrachi.Contains(Login.i) && Login.i.Poeni == FirstPart.points)
+            if (Login.igrachi.Contains(Login.i) && Login.i.Poeni == FirstPartEasy.points)
             {
 
             }
             else
             {
-                Login.i.Poeni = FirstPart.points;
+                Login.i.Poeni = FirstPartEasy.points;
 
                 Login.igrachi.Add(Login.i);
             }
@@ -255,7 +256,7 @@ namespace _3in1Game
             }
             for (int i = 0; i < br; i++)
             {
-                s += Login.igrachi.ElementAt(i).Ime + "\t Total points: " + Login.igrachi.ElementAt(i).Poeni + "\t Mode: " + Login.igrachi.ElementAt(i).Mode + "\n";
+                s += Login.igrachi.ElementAt(i).Ime + "\t Total points: " + Login.igrachi.ElementAt(i).Poeni +"\t Mode: "+Login.igrachi.ElementAt(i).Mode +"\n";
 
             }
 

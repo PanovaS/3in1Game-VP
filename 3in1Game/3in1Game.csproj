@@ -51,6 +51,12 @@
     <Compile Include="FirstPart.Designer.cs">
       <DependentUpon>FirstPart.cs</DependentUpon>
     </Compile>
+    <Compile Include="FirstPartEasy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstPartEasy.Designer.cs">
+      <DependentUpon>FirstPartEasy.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,15 +77,30 @@
     <Compile Include="SecondPart.Designer.cs">
       <DependentUpon>SecondPart.cs</DependentUpon>
     </Compile>
+    <Compile Include="SecondPartEasy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecondPartEasy.Designer.cs">
+      <DependentUpon>SecondPartEasy.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThirdPart.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ThirdPart.Designer.cs">
       <DependentUpon>ThirdPart.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThirdPartEasy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThirdPartEasy.Designer.cs">
+      <DependentUpon>ThirdPartEasy.cs</DependentUpon>
+    </Compile>
     <Compile Include="Words.cs" />
     <EmbeddedResource Include="FirstPart.resx">
       <DependentUpon>FirstPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstPartEasy.resx">
+      <DependentUpon>FirstPartEasy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -92,8 +113,14 @@
     <EmbeddedResource Include="SecondPart.resx">
       <DependentUpon>SecondPart.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SecondPartEasy.resx">
+      <DependentUpon>SecondPartEasy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ThirdPart.resx">
       <DependentUpon>ThirdPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThirdPartEasy.resx">
+      <DependentUpon>ThirdPartEasy.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -281,6 +308,78 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Webp.net-resizeimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image4_part_005.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image4_part_006.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image4_part_001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image4_part_002.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image4_part_003.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image4_part_004.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image5_part_005.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image5_part_006.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image5_part_001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image5_part_002.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image5_part_003.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image5_part_004.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image6_part_006.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image6_part_001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image6_part_002.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image6_part_003.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image6_part_004.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image6_part_005.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image7_part_006.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image7_part_001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image7_part_002.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image7_part_003.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image7_part_004.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image7_part_005.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

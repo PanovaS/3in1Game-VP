@@ -13,6 +13,8 @@ namespace _3in1Game
     public partial class Login : Form
     {
         FirstPart firstForm;
+        FirstPartEasy firstFormEasy;
+        //FirstPartHard firstFormHard;
         public static string Player1 { set; get; }
         public static List<Player> igrachi = new List<Player>();
         public static Player i;
@@ -46,8 +48,22 @@ namespace _3in1Game
                 i = new Player();
                 i.Ime = Player1;
                 i.Poeni = 0;
-                firstForm = new FirstPart();
-                firstForm.Show();
+                i.Mode = comboBox1.SelectedItem.ToString();
+                if (i.Mode.Equals("Medium"))
+                {
+                    firstForm = new FirstPart();
+                    firstForm.Show();
+                }
+                else if (i.Mode.Equals("Easy"))
+                {
+                    firstFormEasy = new FirstPartEasy();
+                    firstFormEasy.Show();
+
+                }
+                else {
+                //    firstFormHard = new FirstPartHard();
+                  //  firstFormHard.Show();
+                }
                 this.Hide();
             }
         }

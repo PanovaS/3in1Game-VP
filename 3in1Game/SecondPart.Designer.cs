@@ -40,8 +40,6 @@
             this.lblPoints2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -51,6 +49,8 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -197,30 +197,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Puzzle ";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Green;
-            this.label3.Location = new System.Drawing.Point(491, 343);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(200, 21);
-            this.label3.TabIndex = 30;
-            this.label3.Text = "You won 10 points";
-            this.label3.Visible = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Algerian", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Green;
-            this.label8.Location = new System.Drawing.Point(478, 291);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(258, 52);
-            this.label8.TabIndex = 31;
-            this.label8.Text = "Congratulations! \r\nYou won 30 points";
-            this.label8.Visible = false;
-            // 
             // pictureBox7
             // 
             this.pictureBox7.Location = new System.Drawing.Point(294, 295);
@@ -302,6 +278,30 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.SwitchPictureBox);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Algerian", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Green;
+            this.label3.Location = new System.Drawing.Point(491, 343);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(200, 21);
+            this.label3.TabIndex = 30;
+            this.label3.Text = "You won 10 points";
+            this.label3.Visible = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Algerian", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Green;
+            this.label8.Location = new System.Drawing.Point(478, 291);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(258, 52);
+            this.label8.TabIndex = 31;
+            this.label8.Text = "Congratulations! \r\nYou won 30 points";
+            this.label8.Visible = false;
+            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -346,7 +346,7 @@
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.label7);
             this.Name = "SecondPart";
-            this.Text = "sad";
+            this.Text = "Puzzle";
             this.Load += new System.EventHandler(this.SecondPart_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
