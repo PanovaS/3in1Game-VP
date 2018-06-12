@@ -193,7 +193,7 @@
             this.panel1.Controls.Add(this.lbl1);
             this.panel1.Location = new System.Drawing.Point(38, 98);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(196, 61);
+            this.panel1.Size = new System.Drawing.Size(227, 61);
             this.panel1.TabIndex = 33;
             // 
             // lbl1
@@ -212,8 +212,9 @@
             this.panel3.Controls.Add(this.lbl3);
             this.panel3.Location = new System.Drawing.Point(38, 319);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(196, 60);
+            this.panel3.Size = new System.Drawing.Size(227, 60);
             this.panel3.TabIndex = 35;
+            this.panel3.Click += new System.EventHandler(this.panel3_Click);
             // 
             // lbl3
             // 
@@ -283,8 +284,9 @@
             this.panel2.Controls.Add(this.lbl2);
             this.panel2.Location = new System.Drawing.Point(38, 205);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(196, 61);
+            this.panel2.Size = new System.Drawing.Size(227, 61);
             this.panel2.TabIndex = 34;
+            this.panel2.Click += new System.EventHandler(this.panel2_Click);
             // 
             // label1
             // 

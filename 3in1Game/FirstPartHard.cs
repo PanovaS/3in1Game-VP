@@ -192,10 +192,5 @@ namespace _3in1Game
             button3.Visible = false;
         }
 
-        private void FirstPartHard_Load(object sender, EventArgs e)
-        {
-
-        }
-       
-    }
+         }
 }

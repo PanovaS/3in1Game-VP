@@ -13,7 +13,7 @@ namespace _3in1Game
     public partial class SecondPartHard : Form
     {
         int inNullSliceIndex;
-        ThirdPart thirdForm;
+        ThirdPartHard thirdForm;
         public bool isHit { get; set; }
         public List<Bitmap> lstOriginalPicturesList = new List<Bitmap>();
         public List<Bitmap> images = new List<Bitmap>();
@@ -196,9 +196,9 @@ namespace _3in1Game
                     {
 
                         (groupBox1.Controls[inNullSliceIndex] as PictureBox).Image = lstOriginalPicturesList[15];
-                        FirstPart.points += 30;
+                        FirstPartHard.points += 30;
                         button2.Enabled = true;
-                        lblPoints2.Text = FirstPart.points.ToString();
+                        lblPoints2.Text = FirstPartHard.points.ToString();
                         //Shuffle();
                         label8.Visible = true;
                         button2.Enabled = true;
@@ -237,15 +237,12 @@ namespace _3in1Game
 
         private void button2_Click(object sender, EventArgs e)
         {
-            thirdForm = new ThirdPart();
+            thirdForm = new ThirdPartHard();
             thirdForm.Show();
             thirdForm.Location = this.Location;
             this.Close();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

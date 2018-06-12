@@ -12,9 +12,6 @@ namespace _3in1Game
 {
     public partial class ThirdPartHard : Form
     {
-
-
-
         public List<Words> words { get; set; }
         public Words word { get; set; }
         public Words selectWord { get; set; }
@@ -34,7 +31,7 @@ namespace _3in1Game
             this.Size = new Size(950, 700);
             words = new List<Words>();
             word = new Words();
-            lblPoints.Text = FirstPartHard.points.ToString();
+         lblPoints.Text = FirstPartHard.points.ToString();
             Fill();
             HideLabels();
             Selected();
@@ -46,7 +43,7 @@ namespace _3in1Game
             timer.Tick += delegate
             {
                 time--;
-                if (time <= 0)
+                if (time < 0)
                 {
                     timer.Stop();
                     label8.Visible = true;
@@ -112,25 +109,25 @@ namespace _3in1Game
             words.Add(word);
 
             word = new Words();
-            word.MovieName = "LA LA LAND";
-            word.movieAssociation.Add("Ryan Gosling");
-            word.movieAssociation.Add("Jazz pianist");
-            word.movieAssociation.Add("Love story");
-            word.movieAssociation.Add("Emma Stone");
-            word.movieAssociation.Add("Ground");
-            word.movieAssociation.Add("Los Angeles");
-            word.image = Properties.Resources.lalaLand;
+            word.MovieName = "DIVERGENT";
+            word.movieAssociation.Add("Kate Winslet");
+            word.movieAssociation.Add("Science fiction trilogy");
+            word.movieAssociation.Add("Dividing people");
+            word.movieAssociation.Add("Fractions based on human virtues");
+            word.movieAssociation.Add("Tris & Four");
+            word.movieAssociation.Add("Different");
+            word.image = Properties.Resources.divergent;
             words.Add(word);
 
             word = new Words();
-            word.MovieName = "TITANIC";
-            word.movieAssociation.Add("Leonardo DiCaprio");
-            word.movieAssociation.Add("Ship");
-            word.movieAssociation.Add("Iceberg");
-            word.movieAssociation.Add("Sink");
-            word.movieAssociation.Add("Passengers");
-            word.movieAssociation.Add("Ocean");
-            word.image = Properties.Resources.Titanic;
+            word.MovieName = "MAZE RUNNER";
+            word.movieAssociation.Add("Run");
+            word.movieAssociation.Add("Labyrinth");
+            word.movieAssociation.Add("Waking up without memory");
+            word.movieAssociation.Add("Finding a way out");
+            word.movieAssociation.Add("Science fiction");
+            word.movieAssociation.Add("Dylan O'Brien");
+            word.image = Properties.Resources.maze;
             words.Add(word);
 
             word = new Words();
@@ -145,14 +142,14 @@ namespace _3in1Game
             words.Add(word);
 
             word = new Words();
-            word.MovieName = "WONDER WOMAN";
-            word.movieAssociation.Add("Gal Gadot");
-            word.movieAssociation.Add("Female");
-            word.movieAssociation.Add("Amazonian warrior");
-            word.movieAssociation.Add("Fighting in war");
-            word.movieAssociation.Add("Girl power");
-            word.movieAssociation.Add("Superhero movie");
-            word.image = Properties.Resources.wonder;
+            word.MovieName = "DESPERATE HOUSEWIVES";
+            word.movieAssociation.Add("Eva Longoria");
+            word.movieAssociation.Add("Comedy series");
+            word.movieAssociation.Add("Neighbours");
+            word.movieAssociation.Add("The life of a group of women");
+            word.movieAssociation.Add("Affairs");
+            word.movieAssociation.Add("Homekeepers");
+            word.image = Properties.Resources.dd;
             words.Add(word);
 
 
@@ -229,6 +226,7 @@ namespace _3in1Game
                 label7.Visible = true;
                 lblPoints.Text = FirstPartHard.points.ToString();
                 GameOver();
+               
             }
             else
             {

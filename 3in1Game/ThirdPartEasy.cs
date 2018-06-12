@@ -98,14 +98,14 @@ namespace _3in1Game
             words.Add(word);
 
             word = new Words();
-            word.MovieName = "GOSSIP GIRL";
-            word.movieAssociation.Add("Blake Lively");
-            word.movieAssociation.Add("XOXO");
-            word.movieAssociation.Add("Scandals");
-            word.movieAssociation.Add("Upper East Side of New York");
-            word.movieAssociation.Add("Teen series");
-            word.movieAssociation.Add("Blair Waldorf");
-            word.image = Properties.Resources.Gossip_girl;
+            word.MovieName = "HARRY POTTER";
+            word.movieAssociation.Add("Emma Watson");
+            word.movieAssociation.Add("Three best friends");
+            word.movieAssociation.Add("School of Witchcraft");
+            word.movieAssociation.Add("Fantasy");
+            word.movieAssociation.Add("Wizards");
+            word.movieAssociation.Add("Voldemort");
+            word.image = Properties.Resources.hp;
             words.Add(word);
 
             word = new Words();
@@ -179,15 +179,9 @@ namespace _3in1Game
             lbl1.Visible = true;
         }
 
-        private void panel3_MouseClick(object sender, MouseEventArgs e)
-        {
-            lbl3.Visible = true;
-        }
+      
 
-        private void panel2_MouseClick(object sender, MouseEventArgs e)
-        {
-            lbl2.Visible = true;
-        }
+       
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -304,6 +298,16 @@ namespace _3in1Game
                 Application.Exit();
             }
 
+        }
+
+        private void panel2_Click(object sender, EventArgs e)
+        {
+            lbl2.Visible = true;
+        }
+
+        private void panel3_Click(object sender, EventArgs e)
+        {
+            lbl3.Visible = true;
         }
     }
 }

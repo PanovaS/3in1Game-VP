@@ -87,24 +87,24 @@ namespace _3in1Game
 
         public void Fill()
         {
-            word.MovieName = "MALEFICENT";
-            word.movieAssociation.Add("Angelina Jolie");
-            word.movieAssociation.Add("Evil");
-            word.movieAssociation.Add("Noxious");
-            word.movieAssociation.Add("Sleeping Beauty");
-            word.movieAssociation.Add("Vicious");
-            word.movieAssociation.Add("Hostile");
-            word.image = Properties.Resources.Maleficent;
+            word.MovieName = "BAYWATCH";
+            word.movieAssociation.Add("Dwayne Johnson");
+            word.movieAssociation.Add("Zac Efron");
+            word.movieAssociation.Add("Lifeguards");
+            word.movieAssociation.Add("Saving the bay/beach");
+            word.movieAssociation.Add("Drug lord");
+            word.movieAssociation.Add("Rescues");
+            word.image = Properties.Resources.baywatch;
             words.Add(word);
 
             word = new Words();
             word.MovieName = "GOSSIP GIRL";
             word.movieAssociation.Add("Blake Lively");
-            word.movieAssociation.Add("Empire State");
-            word.movieAssociation.Add("Chatter");
-            word.movieAssociation.Add("Female");
-            word.movieAssociation.Add("Series");
-            word.movieAssociation.Add("Defamation");
+            word.movieAssociation.Add("XOXO");
+            word.movieAssociation.Add("Scandals");
+            word.movieAssociation.Add("Upper East Side of New York");
+            word.movieAssociation.Add("Teen series");
+            word.movieAssociation.Add("Blair Waldorf");
             word.image = Properties.Resources.Gossip_girl;
             words.Add(word);
 
@@ -131,14 +131,14 @@ namespace _3in1Game
             words.Add(word);
 
             word = new Words();
-            word.MovieName = "DEADPOOL";
-            word.movieAssociation.Add("Ryan Reynolds");
-            word.movieAssociation.Add("Superhero");
-            word.movieAssociation.Add("Revenge");
-            word.movieAssociation.Add("Healing powers");
-            word.movieAssociation.Add("Oscar");
-            word.movieAssociation.Add("Dying");
-            word.image = Properties.Resources.Deadpool;
+            word.MovieName = "THE NOTEBOOK";
+            word.movieAssociation.Add("Ryan Gosling");
+            word.movieAssociation.Add("Narrated love story");
+            word.movieAssociation.Add("Romantic drama");
+            word.movieAssociation.Add("Nicholas Sparks");
+            word.movieAssociation.Add("Notepad");
+            word.movieAssociation.Add("Social differences");
+            word.image = Properties.Resources.notebook;
             words.Add(word);
 
             word = new Words();
@@ -304,5 +304,7 @@ namespace _3in1Game
             }
 
         }
+
+        
     }
 }

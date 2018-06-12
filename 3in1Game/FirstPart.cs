@@ -192,6 +192,8 @@ namespace _3in1Game
             button1.Visible = true;
             button3.Visible = false;
         }
+
+       
     }
     }
 
