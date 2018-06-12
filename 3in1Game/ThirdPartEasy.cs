@@ -28,6 +28,7 @@ namespace _3in1Game
         public ThirdPartEasy()
         {
             InitializeComponent();
+            this.Size = new Size(950, 700);
             words = new List<Words>();
             word = new Words();
             lblPoints.Text = FirstPartEasy.points.ToString();

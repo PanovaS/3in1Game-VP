@@ -25,7 +25,7 @@ namespace _3in1Game
         public SecondPartEasy()
         {
             InitializeComponent();
-            this.Size = new Size(850, 600);
+            this.Size = new Size(950, 700);
             isHit = false;
             lblPoints2.Text = FirstPartEasy.points.ToString();
             correct.Add("Will Smith");
@@ -217,6 +217,7 @@ namespace _3in1Game
         {
             thirdForm = new ThirdPartEasy();
             thirdForm.Show();
+            thirdForm.Location = this.Location;
             this.Close();
         }
     }

@@ -57,6 +57,12 @@
     <Compile Include="FirstPartEasy.Designer.cs">
       <DependentUpon>FirstPartEasy.cs</DependentUpon>
     </Compile>
+    <Compile Include="FirstPartHard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstPartHard.Designer.cs">
+      <DependentUpon>FirstPartHard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,12 @@
     <Compile Include="SecondPartEasy.Designer.cs">
       <DependentUpon>SecondPartEasy.cs</DependentUpon>
     </Compile>
+    <Compile Include="SecondPartHard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecondPartHard.Designer.cs">
+      <DependentUpon>SecondPartHard.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThirdPart.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,12 +107,21 @@
     <Compile Include="ThirdPartEasy.Designer.cs">
       <DependentUpon>ThirdPartEasy.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThirdPartHard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThirdPartHard.Designer.cs">
+      <DependentUpon>ThirdPartHard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Words.cs" />
     <EmbeddedResource Include="FirstPart.resx">
       <DependentUpon>FirstPart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FirstPartEasy.resx">
       <DependentUpon>FirstPartEasy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstPartHard.resx">
+      <DependentUpon>FirstPartHard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -116,11 +137,17 @@
     <EmbeddedResource Include="SecondPartEasy.resx">
       <DependentUpon>SecondPartEasy.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SecondPartHard.resx">
+      <DependentUpon>SecondPartHard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ThirdPart.resx">
       <DependentUpon>ThirdPart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThirdPartEasy.resx">
       <DependentUpon>ThirdPartEasy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThirdPartHard.resx">
+      <DependentUpon>ThirdPartHard.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -380,6 +407,216 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\image7_part_005.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jessica-Chastain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1d8f6ab6f41c16aa76c84cc8172c468e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1525254000-therock.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_016.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_part_0021.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image11_part_003.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image11_part_004.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image11_part_005.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image11_part_006.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image11_part_007.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image11_part_008.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image11_part_009.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image11_part_010.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image11_part_011.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image11_part_012.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image11_part_013.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image11_part_014.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image11_part_015.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image11_part_016.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image8_part_001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image8_part_002.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image8_part_003.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image8_part_004.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image8_part_005.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image8_part_006.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image8_part_007.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image8_part_008.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image8_part_009.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image8_part_010.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image8_part_011.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image8_part_012.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image8_part_013.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image8_part_014.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image8_part_015.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image8_part_016.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image9_part_001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image9_part_002.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image9_part_003.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image9_part_004.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image9_part_005.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image9_part_006.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image9_part_007.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image9_part_008.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image9_part_009.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image9_part_010.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image9_part_011.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image9_part_012.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image9_part_013.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image9_part_014.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image9_part_015.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image9_part_016.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image10_part_001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image10_part_002.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image10_part_003.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image10_part_004.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image10_part_005.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image10_part_006.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image10_part_007.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image10_part_008.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image10_part_009.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image10_part_010.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image10_part_011.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image10_part_012.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image10_part_013.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image10_part_014.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image10_part_015.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image10_part_016.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image11_part_001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image11_part_002.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

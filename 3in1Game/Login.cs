@@ -14,7 +14,7 @@ namespace _3in1Game
     {
         FirstPart firstForm;
         FirstPartEasy firstFormEasy;
-        //FirstPartHard firstFormHard;
+        FirstPartHard firstFormHard;
         public static string Player1 { set; get; }
         public static List<Player> igrachi = new List<Player>();
         public static Player i;
@@ -22,7 +22,7 @@ namespace _3in1Game
         public Login()
         {
             InitializeComponent();
-            this.Size = new Size(850, 600);
+            this.Size = new Size(950, 700);
         }
 
 
@@ -61,8 +61,10 @@ namespace _3in1Game
 
                 }
                 else {
-                //    firstFormHard = new FirstPartHard();
-                  //  firstFormHard.Show();
+
+                     firstFormHard = new FirstPartHard();
+                     firstFormHard.Show();
+                   firstFormHard.Location = this.Location;
                 }
                 this.Hide();
             }

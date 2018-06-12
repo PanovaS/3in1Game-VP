@@ -33,7 +33,7 @@ namespace _3in1Game
             loginForm = new Login();
             lbwelcome.Text = "Welcome " + Login.i.Ime;
             lbwelcome.Visible = true;
-            this.Size = new Size(750, 640);
+            this.Size = new Size(950, 700);
 
         }
 
@@ -166,6 +166,7 @@ namespace _3in1Game
         {
             secondForm = new SecondPart();
             secondForm.Show();
+            secondForm.Location = this.Location;
             this.Hide();
             
         }
