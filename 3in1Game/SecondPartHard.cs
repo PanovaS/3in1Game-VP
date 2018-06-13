@@ -227,7 +227,7 @@ namespace _3in1Game
                 Hit();
                 button1.Enabled = false;
                 button2.Enabled = true;
-                groupBox1.Visible = false;
+                groupBox1.Visible = true;
             }
             else
             {
@@ -242,7 +242,6 @@ namespace _3in1Game
             thirdForm.Location = this.Location;
             this.Close();
         }
-
         
     }
 }
